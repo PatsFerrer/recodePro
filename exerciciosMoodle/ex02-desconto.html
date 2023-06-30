@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Te amo Jesus!</title>
+</head>
+<body>
+    <script>
+        /*
+        Toda linguagem de programação tem suas estruturas condicionais, com o Javascript não é diferente, nesse exercício vamos conhecer essas estruturas (IF, ELSE, ELSE IF). 
+
+        Faça um script que mostre o novo preço de um produto sabendo-se que este terá um desconto de 15%, mostrando também a classificação do produto segundo as informações abaixo.
+
+        Novo preço: de 500 para cima = CARO
+
+        Abaixo de 500 = BARATO
+        */
+
+        var produto = Number(window.prompt("Escreva o preço do produto"))
+        var desconto = produto - (produto * (15/100))
+
+        if (desconto < 500) {
+            alert(`Produto BARATO! Ele custa R$ ${desconto}`)
+        } else {
+            alert(`Produto CARO! Ele custa R$ ${desconto}`)
+        }
+    </script>
+</body>
+</html>
