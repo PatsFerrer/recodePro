@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Te amo JS</title>
+</head>
+<body>
+
+    <script>
+        /*
+        Escreva um script para ler o salário mensal atual de um funcionário e o percentual de reajuste. Calcular e escrever o valor do novo salário.
+        */
+        var salarioMensal = Number(window.prompt("Qual o seu salário mensal?"))
+        var percentualReajuste = (Number(window.prompt("Qual o percentual de reajuste?")) / 100)
+        var novoSalario = salarioMensal + (salarioMensal * percentualReajuste)
+
+        window.alert(`O novo salário é de R$${novoSalario}!`)
+
+    </script>
+</body>
+
+</html>
