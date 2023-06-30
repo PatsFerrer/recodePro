@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Te amo Deusss</title>
+</head>
+<body>
+    <script>
+        /*
+        As estruturas condicionais têm suas complexidade e maneiras de serem aplicadas, nesse exemplo vamos fazer desenvolver um exercício usando condicionais encadeadas e compostas. 
+
+        Faça um script que receba a altura e o sexo de uma pessoa, calcule e mostre o seu peso ideal, utilizando as seguintes fórmulas:
+
+        - para homens: (72 * altura) - 58
+        - para mulheres: (62 * altura) – 44
+        */
+
+        var altura = Number(prompt("Qual a sua altura em metros? Ex: 1.72"))
+        var sexo = prompt("Qual seu sexo: 'F' ou 'M'?")
+        var peso = 0
+
+        if (sexo == 'M') {
+            peso = (72 * altura) - 58
+            alert(`Seu peso ideal é ${peso}kg`)
+        } else if (sexo == 'F') {
+            peso = (62 * altura) - 44
+            alert(`Seu peso ideal é ${peso}kg`)
+        }
+    </script>
+</body>
+</html>
